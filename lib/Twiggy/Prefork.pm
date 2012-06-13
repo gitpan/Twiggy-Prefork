@@ -3,7 +3,7 @@ package Twiggy::Prefork;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 __END__
@@ -104,6 +104,8 @@ Block Twiggy::Prefork worker process exiting until your jobs done.
 =head1 AUTHOR
 
 Masahiro Nagano E<lt>kazeburo {at} gmail.comE<gt>
+
+Shigeki Morimoto
 
 =head1 SEE ALSO
 
