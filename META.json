@@ -23,11 +23,6 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
             "CPAN::Meta" : "0",
@@ -48,6 +43,15 @@
             "Parallel::Prefork" : "0.13",
             "Twiggy" : "0.1020"
          }
+      },
+      "test" : {
+         "requires" : {
+            "LWP::UserAgent" : "0",
+            "Plack::Test::Suite" : "0",
+            "Test::More" : "0",
+            "Test::Requires" : "0",
+            "Test::TCP" : "2.00"
+         }
       }
    },
    "provides" : {
@@ -56,7 +60,7 @@
       },
       "Twiggy::Prefork" : {
          "file" : "lib/Twiggy/Prefork.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "Twiggy::Prefork::Server" : {
          "file" : "lib/Twiggy/Prefork/Server.pm"
@@ -76,7 +80,7 @@
          "web" : "https://github.com/kazeburo/Twiggy-Prefork"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
       "Masahiro Nagano <kazeburo@gmail.com>"
    ]
