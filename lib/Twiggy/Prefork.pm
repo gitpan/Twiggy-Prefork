@@ -3,7 +3,7 @@ package Twiggy::Prefork;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 1;
 __END__
@@ -59,7 +59,7 @@ if set, randomizes the number of requests handled by a single worker process bet
 
 =back
 
-=head1 PSGI extentions
+=head1 PSGI extensions
 
 =over 4
 

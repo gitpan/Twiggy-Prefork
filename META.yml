@@ -3,12 +3,13 @@ abstract: 'Preforking AnyEvent HTTP server for PSGI'
 author:
   - 'Masahiro Nagano <kazeburo {at} gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.4.6, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,13 +17,30 @@ meta-spec:
 name: Twiggy-Prefork
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Plack::Handler::Twiggy::Prefork:
+    file: lib/Plack/Handler/Twiggy/Prefork.pm
+  Twiggy::Prefork:
+    file: lib/Twiggy/Prefork.pm
+    version: 0.03
+  Twiggy::Prefork::Server:
+    file: lib/Twiggy/Prefork/Server.pm
+  Twiggy::Prefork::Server::SS:
+    file: lib/Twiggy/Prefork/Server/SS.pm
 requires:
   Parallel::Prefork: 0.13
   Twiggy: 0.1020
 resources:
-  license: http://dev.perl.org/licenses/
+  bugtracker: https://github.com/kazeburo/Twiggy-Prefork/issues
+  homepage: https://github.com/kazeburo/Twiggy-Prefork
   repository: git://github.com/kazeburo/Twiggy-Prefork.git
-version: 0.02
+version: 0.03
+x_contributors:
+  - 'Masahiro Nagano <kazeburo@gmail.com>'
