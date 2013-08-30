@@ -13,7 +13,7 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.4.6, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Minilla/v0.6.4, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -33,18 +33,20 @@ provides:
     file: lib/Plack/Handler/Twiggy/Prefork.pm
   Twiggy::Prefork:
     file: lib/Twiggy/Prefork.pm
-    version: 0.04
+    version: 0.05
   Twiggy::Prefork::Server:
     file: lib/Twiggy/Prefork/Server.pm
   Twiggy::Prefork::Server::SS:
     file: lib/Twiggy/Prefork/Server/SS.pm
 requires:
+  AnyEvent: 0
   Parallel::Prefork: 0.13
+  Server::Starter: 0
   Twiggy: 0.1020
 resources:
   bugtracker: https://github.com/kazeburo/Twiggy-Prefork/issues
   homepage: https://github.com/kazeburo/Twiggy-Prefork
   repository: git://github.com/kazeburo/Twiggy-Prefork.git
-version: 0.04
+version: 0.05
 x_contributors:
   - 'Masahiro Nagano <kazeburo@gmail.com>'
