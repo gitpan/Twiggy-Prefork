@@ -17,5 +17,6 @@ t/anyevent_slow_post.t
 t/deflater.t
 t/disconnect.t
 t/prefork.t
+t/signals.t
 META.yml
 MANIFEST

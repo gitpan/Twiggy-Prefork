@@ -48,10 +48,12 @@
       },
       "test" : {
          "requires" : {
+            "Capture::Tiny" : "0",
             "LWP::UserAgent" : "0",
             "Plack::Test::Suite" : "0",
             "Test::More" : "0",
             "Test::Requires" : "0",
+            "Test::SharedFork" : "0",
             "Test::TCP" : "2.00"
          }
       }
@@ -62,7 +64,7 @@
       },
       "Twiggy::Prefork" : {
          "file" : "lib/Twiggy/Prefork.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       },
       "Twiggy::Prefork::Server" : {
          "file" : "lib/Twiggy/Prefork/Server.pm"
@@ -82,8 +84,9 @@
          "web" : "https://github.com/kazeburo/Twiggy-Prefork"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_contributors" : [
+      "nhayashi <hayashi.naritoshi@dena.jp>",
       "Masahiro Nagano <kazeburo@gmail.com>"
    ]
 }

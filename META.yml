@@ -3,10 +3,12 @@ abstract: 'Preforking AnyEvent HTTP server for PSGI'
 author:
   - 'Masahiro Nagano <kazeburo {at} gmail.com>'
 build_requires:
+  Capture::Tiny: 0
   LWP::UserAgent: 0
   Plack::Test::Suite: 0
   Test::More: 0
   Test::Requires: 0
+  Test::SharedFork: 0
   Test::TCP: 2.00
 configure_requires:
   CPAN::Meta: 0
@@ -33,7 +35,7 @@ provides:
     file: lib/Plack/Handler/Twiggy/Prefork.pm
   Twiggy::Prefork:
     file: lib/Twiggy/Prefork.pm
-    version: 0.05
+    version: 0.06
   Twiggy::Prefork::Server:
     file: lib/Twiggy/Prefork/Server.pm
   Twiggy::Prefork::Server::SS:
@@ -47,6 +49,7 @@ resources:
   bugtracker: https://github.com/kazeburo/Twiggy-Prefork/issues
   homepage: https://github.com/kazeburo/Twiggy-Prefork
   repository: git://github.com/kazeburo/Twiggy-Prefork.git
-version: 0.05
+version: 0.06
 x_contributors:
+  - 'nhayashi <hayashi.naritoshi@dena.jp>'
   - 'Masahiro Nagano <kazeburo@gmail.com>'
