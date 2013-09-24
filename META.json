@@ -64,7 +64,7 @@
       },
       "Twiggy::Prefork" : {
          "file" : "lib/Twiggy/Prefork.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       },
       "Twiggy::Prefork::Server" : {
          "file" : "lib/Twiggy/Prefork/Server.pm"
@@ -84,7 +84,7 @@
          "web" : "https://github.com/kazeburo/Twiggy-Prefork"
       }
    },
-   "version" : "0.06",
+   "version" : "0.07",
    "x_contributors" : [
       "nhayashi <hayashi.naritoshi@dena.jp>",
       "Masahiro Nagano <kazeburo@gmail.com>"
