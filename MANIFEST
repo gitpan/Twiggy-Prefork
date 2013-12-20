@@ -16,6 +16,8 @@ t/anyevent_server_starter.t
 t/anyevent_slow_post.t
 t/deflater.t
 t/disconnect.t
+t/initialize_option.t
+t/max_reqs_per_child_0.t
 t/prefork.t
 t/signals.t
 META.yml

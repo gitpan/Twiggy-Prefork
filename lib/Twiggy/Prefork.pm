@@ -3,7 +3,7 @@ package Twiggy::Prefork;
 use strict;
 use warnings;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 1;
 __END__
@@ -51,7 +51,7 @@ number of worker processes (default: 10)
 
 =item max_reqs_per_child
 
-max. number of requests to be handled before a worker process exits (default: 100)
+max. number of requests to be handled before a worker process exits. If passed 0, child process is not existed by number of requests (default: 100).
 
 =item min_reqs_per_child
 
